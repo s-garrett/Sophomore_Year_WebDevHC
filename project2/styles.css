@@ -9,7 +9,7 @@ body {
 
 .title {
   font-family: sans-serif;
-  font-size: 18;
+  font-size: 100;
   color: ghostwhite;
   letter-spacing: 2;
   position: absolute;
@@ -17,11 +17,11 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-  padding: 50px;
 }
 
 .navbar-bg {
-  margin-top: 0;
+  margin-top: 590px;
+  width: 100%;
   min-width: 1000px;
   background-color: whitesmoke;
   height: 45px;
@@ -35,14 +35,13 @@ body {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-around;
   width: auto;
   margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .option {
-  position: relative;
   font-family: "avenir";
   font-size: 17px;
   color: #21618C;
@@ -55,17 +54,4 @@ body {
 
 .option:hover {
   color: darkblue;
-}
-
-.bg {
-  background-size: contain;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  padding: 15px;
-}
-
-.cities {
-  display: flex;
 }
