@@ -1,0 +1,14 @@
+html{
+  background-color: blue;
+}
+
+.bg{
+  float: left;
+  background-color: whitesmoke;
+  width:100px;height: 100px;
+}
+
+.city{
+  display: flex;
+  flex
+}
