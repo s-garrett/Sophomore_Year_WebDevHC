@@ -1,3 +1,44 @@
 html{
-  
+ 
 }
+body{
+      }
+
+}
+    .navbar-bg{
+        width:100%;
+        min-width: 1000px;
+        background-color: ghostwhite;
+        height: 45px;
+}
+    .logo{
+        background-image: url("Travel-Night-globe.png");
+        background-size: contain;
+        width:50px;
+        height: 50px;
+      }
+.navbar{
+          width: 1300px;
+          margin:auto;
+          display: flex;
+          justify-content: space-around;
+}
+.option{
+        
+        font-family:"avenir";
+          
+    
+    font-size:17px;
+        color:#21618C;
+        line-height: 50px;
+        padding-left:15px;
+        padding-right:15px;
+        cursor: pointer;
+        text-align: left;
+}
+.option:hover{
+        color:darkblue;
+      }{
+    
+}
+    
