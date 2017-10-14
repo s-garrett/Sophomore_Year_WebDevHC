@@ -11,4 +11,20 @@ html{
 .city{
   display: flex;
   flex
+
+}
+.city:hover .overlay{
+    opacity:1;
+}
+.overlay{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    opacity: 50%;
+    height:50;
+    width:50;
+    transition:.5s ease;
+    background-color:cornsilk;
 }
