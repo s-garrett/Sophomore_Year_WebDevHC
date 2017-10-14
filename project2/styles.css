@@ -1,53 +1,59 @@
-html{
- 
+html {}
+
+body {
+  background-image: url("9deb08cbac490f5fa43032499f61c581.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
-body{
-      }
+
+.title{
+    font-family: "avenir";
+    font-size: 100;
+    color: ghostwhite;
+    letter-spacing: 2;
+    position: absolute;
+    top: 0; 
+    left: 50;
+    right: 0;
+    text-align: center;
+}
+.navbar-bg {
+margin-top:590px;
+    width: 100%;
+  min-width: 1000px;
+  background-color: whitesmoke;
+  height: 45px;
+}
+
+.logo {
+  background-image: url("Travel-Night-globe.png");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
 
 }
-.bg {
-    background-image:url("map.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;}
-    
-    .navbar-bg{
-        width:100%;
-        min-width: 1000px;
-        background-color: ghostwhite;
-        height: 45px;
+
+.navbar {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
-    .logo{
-        background-image: url("Travel-Night-globe.png");
-        background-size: contain;
-        width:50px;
-        height: 50px;
-      }
-.navbar{
-          width: 1300px;
-          margin:auto;
-          display: flex;
-          justify-content: space-around;
+
+
+.option {
+  font-family: "avenir";
+  font-size: 17px;
+  color: #21618C;
+  line-height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  text-align: left;
+
 }
-.option{
-        
-        font-family:"avenir";
-        font-weight:100;
- 
-          
-    
-    font-size:17px;
-        color:#21618C;
-        line-height: 50px;
-        padding-left:15px;
-        padding-right:15px;
-        cursor: pointer;
-        text-align: left;
+
+.option:hover {
+  color: darkblue;
 }
-.option:hover{
-        color:darkblue;
-      }{
-    
-}
-    
