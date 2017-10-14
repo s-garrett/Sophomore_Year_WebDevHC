@@ -5,6 +5,13 @@ body{
       }
 
 }
+.bg {
+    background-image:url("map.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;}
+    
     .navbar-bg{
         width:100%;
         min-width: 1000px;
@@ -26,6 +33,8 @@ body{
 .option{
         
         font-family:"avenir";
+        font-weight:100;
+ 
           
     
     font-size:17px;
