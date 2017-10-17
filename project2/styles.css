@@ -8,9 +8,9 @@ body {
 }
 
 .title {
-  font-weight:30;
-font-family: "avenir";
-    font-style: italic;
+  font-weight: 30;
+  font-family: "avenir";
+  font-style: italic;
   font-size: 18;
   color: ghostwhite;
   letter-spacing: 2;
@@ -56,9 +56,9 @@ font-family: "avenir";
   text-align: left;
 }
 
-.option:hover {
+/*.option:hover {
   color: darkblue;
-}
+}*/
 
 .bg {
   background-size: contain;
@@ -71,4 +71,32 @@ font-family: "avenir";
 
 .cities {
   display: flex;
+}
+
+.header {
+  font-family: "avenir";
+  font-size: 30;
+  color: ghostwhite;
+  letter-spacing: 2;
+  position: absolute;
+  text-align: center;
+}
+
+.container-bg {
+  display: flex justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  background-color: whitesmoke;
+  min-width: 1000px;
+}
+
+.container{
+  display: flex;
+  width: auto;
+}
+
+.expedia {
+  font-family: "avenir";
+  color: ghostwhite;
+  font-size: 20;
 }
