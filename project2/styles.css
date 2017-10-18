@@ -61,7 +61,6 @@ body {
 }*/
 
 .bg {
-  background-size: contain;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -69,8 +68,132 @@ body {
   padding: 15px;
 }
 
-.cities {
-  display: flex;
+.button1 {
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.button1 .close {
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  height: 250px;
+  width: 500px;
+  top: 147px;
+  left: 132px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 500ms;
+  visibility: hidden;
+  z-index: 2;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button2 {
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.button2 .close {
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.overlay2 {
+  position: absolute;
+  height: 250px;
+  width: 501px;
+  top: 147px;
+  right: 131px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 500ms;
+  visibility: hidden;
+  z-index: 2;
+  opacity: 0;
+}
+
+.overlay2:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button3 {
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.button3 .close {
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.overlay3 {
+  position: absolute;
+  height: 250px;
+  width: 501px;
+  top: 397px;
+  left: 132px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 500ms;
+  visibility: hidden;
+  z-index: 2;
+  opacity: 0;
+}
+
+.overlay3:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button4 {
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.button4 .close {
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.overlay4 {
+  position: absolute;
+  height: 250px;
+  width: 501px;
+  top: 397px;
+  right: 131px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 500ms;
+  visibility: hidden;
+  z-index: 2;
+  opacity: 0;
+}
+
+.overlay4:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.text {
+  text-align: center;
+  color: ghostwhite;
+  padding-top: 50px;
+  font-size: 20;
+  font-family: "avenir"
 }
 
 .header {
@@ -79,24 +202,40 @@ body {
   color: ghostwhite;
   letter-spacing: 2;
   position: absolute;
-  text-align: center;
 }
 
 .container-bg {
-  display: flex justify-content: space-between;
+  display: flex;
+  justify-content: flex-start;
   position: absolute;
   bottom: 0;
   background-color: whitesmoke;
   min-width: 1000px;
+  height: 45px;
 }
 
-.container{
+.container {
   display: flex;
   width: auto;
+  justify-content: flex-end;
+  padding-left: 810px;
 }
 
-.expedia {
+.option2 {
   font-family: "avenir";
   color: ghostwhite;
   font-size: 20;
+  padding: 10px;
+  justify-content: flex-end;
+}
+
+.submit {
+  float: right;
+}
+.header1{
+  font-family: "avenir";
+  font-size: 30;
+  color: ghostwhite;
+  letter-spacing: 2;
+  bottom: 0;
 }
