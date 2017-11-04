@@ -41,3 +41,9 @@ function pNumbers(){
       document.getElementById('task4').innerHTML = "valid".fontcolor("green");
   }
 }
+
+function threeItem(){
+  let makeList = document.getElementById('myList').value;
+  makeList = makeList.split(',');
+  document.getElementById('task5').innerHTML = makeList[2];
+}
