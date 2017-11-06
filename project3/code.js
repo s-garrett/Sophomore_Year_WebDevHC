@@ -5,45 +5,69 @@ function equationSolver() {
   document.getElementById("task1").innerHTML = answer0;
 }
 
-function combineStrings(){
+function combineStrings() {
   const input0 = document.getElementById('string0').value;
   const input1 = document.getElementById('string1').value;
   const input2 = document.getElementById('string2').value;
   const toCombine = ["Hello,", input0, input1, input2 + "!"];
   const answer1 = toCombine.join(" ");
-  document.getElementById('task2').innerHTML =  answer1;
+  document.getElementById('task2').innerHTML = answer1;
 }
 
-function XandY(){
+function XandY() {
   const task3NumX = document.getElementById('x').value;
   const task3NumY = document.getElementById('y').value;
   if (task3NumX > task3NumY) {
     document.getElementById('task3').innerHTML = "bananas".fontcolor("yellow");
-  }
-  else if (task3NumY > task3NumX) {
+  } else if (task3NumY > task3NumX) {
     document.getElementById('task3').innerHTML = "porcupine".fontcolor("brown");
-  }
-  else if (task3NumX == task3NumY && task3NumX < 0) {
+  } else if (task3NumX == task3NumY && task3NumX < 0) {
     document.getElementById('task3').innerHTML = "red apples".fontcolor("red");
-  }
-  else {
+  } else {
     document.getElementById('task3').innerHTML = "green apples".fontcolor("green");
   }
 }
 
-function pNumbers(){
+function pNumbers() {
   const pNumInput = document.getElementById('phoneNumber').value;
-  let Ans = pNumInput.replace(/-| /g, "");
+  //console.log(pNumInput);
+  const Ans = pNumInput.replace(/[^0-9]/g,'');
   if (Ans.length < 10 | Ans.length > 11 | Ans.charAt(0) != "1") {
     document.getElementById('task4').innerHTML = "invalid".fontcolor("red");
-  }
-  else {
-      document.getElementById('task4').innerHTML = "valid".fontcolor("green");
+  } else {
+    document.getElementById('task4').innerHTML = "valid".fontcolor("green");
   }
 }
 
-function threeItem(){
+function threeItem() {
   let makeList = document.getElementById('myList').value;
   makeList = makeList.split(',');
   document.getElementById('task5').innerHTML = makeList[2];
+}
+
+function bttnColor(bttn){
+  if (bttn == "button0"){
+    document.getElementById('button1').style.backgroundColor = "blue";
+
+  }
+
+  else if (bttn == "button1"){
+    document.getElementById('button2').style.backgroundColor = "blue";
+  }
+
+  else if (bttn == "button2"){
+    document.getElementById('button3').style.backgroundColor = "blue";
+  }
+
+  else if (bttn == "button3"){
+    document.getElementById('button4').style.backgroundColor = "blue";
+  }
+
+  else {
+    document.getElementById('button0').style.backgroundColor = "red";
+    document.getElementById('button1').style.backgroundColor = "red";
+    document.getElementById('button2').style.backgroundColor = "red";
+    document.getElementById('button3').style.backgroundColor = "red";
+    document.getElementById('button4').style.backgroundColor = "red";
+  }
 }
