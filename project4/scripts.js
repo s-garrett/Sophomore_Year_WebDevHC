@@ -31,5 +31,17 @@ $(document).ready(function() {
         $('#task3').html("green apples".fontcolor("green"));
       }
   })
-
+$(document).on('click','.pNumbers()',function(){
+      const pNumInput = $('phoneNumber').val();
+      const Ans = pNumInput.replace(/[^0-9]/g,'');
+  if (Ans.length < 10 | Ans.length > 11 | Ans.charAt(0) != "1") {
+    $('#task4').html ("invalid".fontcolor("red"));
+  } else {
+    $('#task4').html(“valid”.fontcolor(“green”));
+  }
+    $(document).on('click','.threeItem()',function(){
+        let makeList = $('myList').val();
+  makeList = makeList.split(',');
+  $('#task5').html= makeList[2];
+        
 });
