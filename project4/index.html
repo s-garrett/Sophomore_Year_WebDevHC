@@ -1,0 +1,73 @@
+<!DOCTYPE html5>
+<html>
+<!--
+AUDREY AND I WORKED TOGETHER ON ALL OF THIS BUT SHE HAD MERGE CONFLICTS THAT SHE COULD NOT FIX.
+WE WORKED FROM MY COMPUTER TOGETHER BC OF THIS. WE ARE ALSO USING OUR LATE WEEK FOR THIS PROJECT.
+-->
+
+<head>
+  <title>Our Project 4, Jquery</title>
+  <script type="text/javascript" src="code.js">
+  </script>
+</head>
+
+<body>
+  <h2>Task 1: Place an Input into an Equation and Edit the Paragraph Tag Below
+    </h2> My Number: <input type="number" id="ex1" />
+  <button class="trigger1">Generate New P Text</button>
+  <p id="task1">
+    Edit me.
+  </p>
+
+  <h2>Task 2: Take 3 Strings and Modify a header element below the inputs to join
+        and Greet the User
+    </h2> String0: <input type="text" id="string0" /> String1: <input type="text" id="string1" /> String2: <input type="text" id="string2" />
+  <button onclick="combineStrings()">Generate Combined Input</button>
+  <header id="task2">
+    <br /> String Input Will be Output Here!
+  </header>
+
+  <h2>Task 3: Take 2 Number Inputs (x and y) and Modify a Paragraph Below to Display Output.
+      If x is greater than y, output bananas in yellow. If y is greater than x, output porcupine
+      in brown. if x and y are equal and negative, output red apples in red. Otherwise output
+      green apples in green.
+    </h2> Number x: <input type="number" id="x" /> Number y: <input type="number" id="y" />
+  <button onclick="XandY()">Compare x and y</button>
+  <p id="task3">
+    Please choose x and y. Then click "Compare x and y".
+  </p>
+
+  <h2>
+      Task 4: Take in a string and modify a header below the input. If the input is a valid
+      United States or Canadian phone number, output "valid" in green. (Else output "invalid"
+      in red.)
+    </h2>
+  <input type="text" id="phoneNumber" />
+  <button onclick="pNumbers()">Check Phone Number</button>
+  <header id="task4">
+    Is This Valid Number?
+  </header>
+
+  <h2>Task 5: Take a String input which will be a comma separated list of items and modify a
+      paragraph below to read the third item in the list.
+    </h2> Enter your List: <input type="text" id="myList" />
+  <button onclick="threeItem()">Click Me to get the 3rd Item</button>
+  <p id="task5">
+    Please Enter your list above.
+  </p>
+
+  <h2>Task 6: create a list of five buttons. If the user presses and of the first four, the next
+      button will turn blue. If he or she presses the fifth item in the list, all of the buttons will
+      turn red. The button colors reset before each press.
+    </h2>
+  <ul id="buttons">
+    <li><button id="button0" onclick="bttnColor('button0')">Button0</button></li>
+    <li><button id="button1" onclick="bttnColor('button1')">Button1</button></li>
+    <li><button id="button2" onclick="bttnColor('button2')">Button2</button></li>
+    <li><button id="button3" onclick="bttnColor('button3')">Button3</button></li>
+    <li><button id="button4" onclick="bttnColor('button4')">Button4</button></li>
+  </ul>
+
+</body>
+
+</html>
