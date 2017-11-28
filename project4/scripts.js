@@ -42,13 +42,87 @@ $(document).ready(function() {
   });
 
   //task5
-  $(document).on('click', '.thirdItem', function(){
+  $(document).on('click', '.thirdItem', function() {
     let makeList = $('#myList').val();
     makeList = makeList.split(',');
     $('#task5').text(makeList[2]);
   });
 
   //Task6
+
+  $(document).on('click', '#button0', function() {
+    $('#button0').css('backgroundColor', '');
+    $('#button1').css('backgroundColor', '');
+    $('#button2').css('backgroundColor', '');
+    $('#button3').css('backgroundColor', '');
+    $('#button4').css('backgroundColor', '');
+    $('#button1').css('backgroundColor', 'blue');
+  });
+  $(document).on('click', '#button1', function() {
+    $('#button0').css('backgroundColor', '');
+    $('#button1').css('backgroundColor', '');
+    $('#button2').css('backgroundColor', '');
+    $('#button3').css('backgroundColor', '');
+    $('#button4').css('backgroundColor', '');
+    $('#button2').css('backgroundColor', 'blue');
+  });
+  $(document).on('click', '#button2', function() {
+    $('#button0').css('backgroundColor', '');
+    $('#button1').css('backgroundColor', '');
+    $('#button2').css('backgroundColor', '');
+    $('#button3').css('backgroundColor', '');
+    $('#button4').css('backgroundColor', '');
+    $('#button3').css('backgroundColor', 'blue');
+  });
+  $(document).on('click', '#button3', function() {
+    $('#button0').css('backgroundColor', '');
+    $('#button1').css('backgroundColor', '');
+    $('#button2').css('backgroundColor', '');
+    $('#button3').css('backgroundColor', '');
+    $('#button4').css('backgroundColor', '');
+    $('#button4').css('backgroundColor', 'blue');
+  });
+
+  $(document).on('click', '#button4', function() {
+    $('#button0').css('backgroundColor', '');
+    $('#button1').css('backgroundColor', '');
+    $('#button2').css('backgroundColor', '');
+    $('#button3').css('backgroundColor', '');
+    $('#button4').css('backgroundColor', '');
+    $('#button0')
+      .delay(500)
+      .queue(function() {
+        $(this).css('backgroundColor', 'red');
+        $(this).dequeue();
+      });
+
+    $('#button1')
+      .delay(500)
+      .queue(function() {
+        $(this).css('backgroundColor', 'red');
+        $(this).dequeue();
+      });
+
+    $('#button2')
+      .delay(500)
+      .queue(function() {
+        $(this).css('backgroundColor', 'red');
+        $(this).dequeue();
+      });
+
+    $('#button3')
+      .delay(500)
+      .queue(function() {
+        $(this).css('backgroundColor', 'red');
+        $(this).dequeue();
+      });
+    $('#button4')
+      .delay(500)
+      .queue(function() {
+        $(this).css('backgroundColor', 'red');
+        $(this).dequeue();
+      });
+  });
 
 
 });
