@@ -17,8 +17,8 @@ $(document).ready(function() {
 
   //task3
   $(document).on('click', '.XandY', function() {
-    const task3NumX = $('#x').val();
-    const task3NumY = $('#y').val();
+    const task3NumX = parseFloat($('#x').val());
+    const task3NumY = parseFloat($('#y').val());
     if (task3NumX > task3NumY) {
       $('#task3').html("bananas".fontcolor("yellow"));
     } else if (task3NumY > task3NumX) {
